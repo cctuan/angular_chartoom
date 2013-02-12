@@ -1,0 +1,15 @@
+/*
+* Main Chat window
+*
+*/
+div.chatwindow{
+	height : 400px;
+	overflow : auto;
+
+}
+/*
+* Login Modal
+*/
+div.modal{
+	display:hide;
+}

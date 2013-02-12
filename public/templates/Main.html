@@ -1,0 +1,14 @@
+<div ng-model="logindone">
+	<div ng-hide="logindone">
+		<h1>Please Login!!</h1>
+	</div>
+	<div ng-show="logindone" class="chatwindow row-fluid" ng-model="messages">
+		<div id="msgcol" ng-init="messages=['test','test2']">
+			<p ng-repeat="msg in messages">
+				{{msg.message}}
+			</p>
+		</div>	
+		<input ng-model="newmsg" type="text" val placeholder="type in yout msg"/>	
+		<button class="btn" ng-click="msgupdate(newmsg)">Submit</button>
+	</div>
+</div>
